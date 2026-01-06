@@ -2,7 +2,7 @@ from sqlmodel import create_engine, Session, SQLModel
 
 from app.core.config import DB_URL
 
-engine = create_engine(DB_URL, connect_args={"check_same_thread": False})
+engine = create_engine(DB_URL)
 
 
 def create_db_and_tables():
